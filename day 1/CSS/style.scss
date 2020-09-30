@@ -1,3 +1,32 @@
-:root{
-    --theme-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --theme-color: #384eff;
+    --primary-font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--primary-font-family);
+    > *{
+        box-sizing: border-box;
+    }
+}
+
+.page-header {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.primary-navigation {
+    margin: 0 auto;
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 }
