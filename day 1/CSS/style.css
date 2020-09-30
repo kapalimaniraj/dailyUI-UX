@@ -23,6 +23,12 @@ body > * {
   margin: auto;
 }
 
+@media only screen and (max-width: 1400px) {
+  .page-header {
+    padding: 0 15px;
+  }
+}
+
 .primary-navigation {
   margin: 0 auto;
 }
