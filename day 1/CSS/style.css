@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 :root {
   --theme-color: #384eff;
+  --theme-black: #333333;
   --primary-font-family: 'Open Sans', sans-serif;
 }
 
@@ -19,13 +20,18 @@ body > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1400px;
   margin: auto;
+  padding: 20px 0;
 }
 
 @media only screen and (max-width: 1400px) {
   .page-header {
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -40,5 +46,48 @@ body > * {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.primary-navigation li {
+  margin: 0 10px;
+}
+
+.primary-navigation a {
+  color: var(--theme-black);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--theme-black);
+}
+
+.logged-in-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logged-in-user__avatar {
+  margin-left: 5px;
+  width: 54px;
+  height: 54px;
+  background-color: var(--theme-color);
+  border-radius: 50%;
+}
+
+.hero {
+  background-color: rebeccapurple;
+  height: 100vh;
+}
+
+.hero .hero__slider {
+  max-width: 1400px;
 }
 /*# sourceMappingURL=style.css.map */
