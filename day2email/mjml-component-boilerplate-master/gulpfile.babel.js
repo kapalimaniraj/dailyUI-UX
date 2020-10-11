@@ -6,6 +6,12 @@ import fs from 'fs'
 import path from 'path'
 import mjml2html from 'mjml'
 import { registerComponent } from 'mjml-core'
+import MjLayout from './components/MjLayout'
+import MjImageText from './components/MjImageText'
+import MjBasicComponent from './components/MjBasicComponent'
+registerComponent(MjBasicComponent)
+registerComponent(MjImageText)
+registerComponent(MjLayout)
 
 const walkSync = (dir, filelist = []) => {
   fs.readdirSync(dir).forEach(file => {
