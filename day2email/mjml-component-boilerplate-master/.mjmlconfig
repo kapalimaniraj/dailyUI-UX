@@ -1,6 +1,7 @@
 {
   "packages": [
     "./lib/components/MjBasicComponent.js",
+    "./lib/components/MjNewHeroBlock.js",
     "./lib/components/MjImageText.js",
     "./lib/components/MjLayout.js"
   ]

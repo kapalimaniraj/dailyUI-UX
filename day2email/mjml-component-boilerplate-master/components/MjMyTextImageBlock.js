@@ -3,17 +3,17 @@ import { BodyComponent } from 'mjml-core'
 
 registerDependencies({
   // Tell the validator which tags are allowed as our component's parent
-  'mj-hero': ['mj-basic-component'],
-  'mj-column': ['mj-basic-component'],
+  'mj-hero': ['mj-text-image'],
+  'mj-column': ['mj-text-image'],
   // Tell the validator which tags are allowed as our component's children
-  'mj-basic-component': []
+  'mj-text-image': []
 })
 
 /*
   Our component is a (useless) simple text tag, that adds colored stars around the text.
   It can take 3 attributes, to specify size and colors.
 */
-export default class MjBasicComponent extends BodyComponent {
+export default class MjTextImage extends BodyComponent {
   // Tell the parser that our component won't contain other mjml tags
   static endingTag = true
 

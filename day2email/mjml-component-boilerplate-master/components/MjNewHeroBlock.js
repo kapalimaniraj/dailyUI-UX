@@ -3,17 +3,17 @@ import { BodyComponent } from 'mjml-core'
 
 registerDependencies({
   // Tell the validator which tags are allowed as our component's parent
-  'mj-hero': ['mj-basic-component'],
-  'mj-column': ['mj-basic-component'],
+  'mj-hero': ['mj-new-hero'],
+  'mj-column': ['mj-new-hero'],
   // Tell the validator which tags are allowed as our component's children
-  'mj-basic-component': []
+  'mj-new-hero': []
 })
 
 /*
   Our component is a (useless) simple text tag, that adds colored stars around the text.
   It can take 3 attributes, to specify size and colors.
 */
-export default class MjBasicComponent extends BodyComponent {
+export default class MjNewHero extends BodyComponent {
   // Tell the parser that our component won't contain other mjml tags
   static endingTag = true
 
@@ -62,6 +62,17 @@ export default class MjBasicComponent extends BodyComponent {
           style: 'wrapperDiv' // This will add the 'wrapperDiv' attributes from getStyles() as inline style
         })}
       >
+      <div class="newsletter-date" ${this.htmlAttributes({
+        style: 'contentP' // This will add the 'contentP' attributes from getStyles() as inline style
+      })}
+      >September 2020</div>
+      <div class="company-logo">
+        <h1>SLICK <BR> CLOSET</h1>
+        <em>Monthly Newsletter</em>
+    </div>
+      <div class="newsletter-issue">
+        Vol 1, Issue 21
+      </div>
       <p ${this.htmlAttributes({
         style: 'contentP' // This will add the 'contentP' attributes from getStyles() as inline style
       })}>

@@ -1,10 +1,28 @@
 <mjml>
   <mj-body>
+  
+    <!-- The first component, mj-basic-component renders as a column child -->
+    <mj-section>
+      <mj-column>
+        <mj-new-hero color="red">
+          I'm among starsssss
+        </mj-new-hero>
+      </mj-column>
+    </mj-section>
+  
+    <!-- The first component, mj-basic-component renders as a column child -->
+    <mj-section>
+      <mj-column>
+        <mj-basic-component color="purple">
+          I'm among stars
+        </mj-basic-component>
+      </mj-column>
+    </mj-section>
 
     <!-- The first component, mj-basic-component renders as a column child -->
     <mj-section>
       <mj-column>
-        <mj-basic-component color="green">
+        <mj-basic-component color="purple">
           I'm among stars
         </mj-basic-component>
       </mj-column>
